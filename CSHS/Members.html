@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+
+  body{
+
+    background-color: #24272c;
+  }
+  .team{
+
+    position: absolute;
+    right: 0;
+    background-color: #5c696d;
+
+  } 
+
+.col-xs-3{
+
+  height: 100%;
+  width: 25%;
+
+}
+
+
+
+.container{
+
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative;
+  height: 100%;
+  right: 50; /* Set a higher z-index value */
+  
+
+}
+
+.row{
+
+  position: relative;
+  height: 390px;
+
+}
+
+.item{
+
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  right: 50; /* Set a higher z-index value */
+  position: relative;
+}
+
+.carousel-control {
+ 
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  top: 50%; /* Position the controls vertically at the center */
+  height: 100%;
+  width: 5%; /* Adjust the width of the controls */
+  /* Adjust the left and right properties to move the controls closer to the edges */
+  left: 0%;
+  right: 0%;
+  /* Adjust the z-index property to make sure the controls appear above the carousel */
+  z-index: 1;
+  background-color: black; /* Change background color */
+  transform: translateY(-50%);
+}
+
+
+
+.carousel-control.left, .carousel-control.right {
+  opacity: 0; /* Adjust opacity */
+}
+
+.carousel-control.left:hover, .carousel-control.right:hover {
+  opacity: 0.1; /* Adjust opacity on hover */
+}
+
+.carousel-control .glyphicon {
+  color: #fff; /* Change icon color */
+  font-size: 24px; /* Adjust icon size */
+}
+
+.left-panel {
+  flex: 0 0 auto; /* Make left panel non-flexible */
+  width: 250px; /* Set a fixed width for the left panel */
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Position from the top */
+  left: 100; /* Position from the left */
+  padding: 20px;
+  
+
+
+}
+
+
+
+@font-face {
+  font-family: 'Univia Pro';
+  src: url('path/to/univia-pro-bolditalic.woff2') format('woff2'), /* Modern Browsers */
+       url('path/to/univia-pro-bolditalic.woff') format('woff'); /* Older Browsers */
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+text {
+  fill: #35322a;
+  filter: url('#money');
+  font-size: 100px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align:center;
+  color: #2488c4;
+  
+}
+
+.sub-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: black; /* Adjust color as needed */
+  text-transform: uppercase;
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+h4,p{
+
+  color: black;
+  
+}
+
+.col-xs-3 img{
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ 
+  </style>
+</head>
+<body>
+
+  <div class="left-panel">
+    <text dominant-baseline='middle' text-anchor='middle'>
+      Meet the Society
+    </text>
+    <a class="navbar-brand" href="index.html"><img src="assets/img/CSHS_Logo_square_letters.png" alt="..." width="400" height="400"/></a>
+    <!-- Add any other content you want in the left panel -->
+  </div>
+
+<div class="team">
+
+  <!--Senior Center-->
+  <div class="container">
+
+    <h1 class="sub-heading">Senior Center Committee</h1>
+    
+    <br>
+    <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="row">
+
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Maya.png" alt="5" width="70%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Maya Liston</h3>
+                <p>Service Chair <br>Senior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Allana.png" alt="5" width="70%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Allana Dayou</h3>
+                
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              
+                <img src="assets/img/team/Abdul.jpg" alt="5" width="70%" height="60%">
+             
+              <div class="carousel-caption">
+                <h4>Abdul Mohammed</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Eugene.jpg" alt="5" width="60%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Owen Trottier</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+  
+              
+            </div>
+          </div>
+        </div>
+  
+        <div class="item">
+          <div class="row">
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Logan.jpg" alt="5" width="75%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Logan Mayo</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            <!-- Add more images here -->
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Chris.jpg" alt="5" width="70%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Chris Legault</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/portfolio/3.jpg" alt="5" width="100%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Shabd Murty</h3>
+
+                <p>Member <br>Senior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Anjali.png" alt="5" width="70%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Anjali Salina</h3>
+
+                <p>Member <br>Senior</p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Norah.png" alt="5" width="70%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Norah Anderson</h3>
+
+                <p>Member <br>Senior</p>
+              </div>
+            </div>
+            <!-- Add more images here -->
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Calvary.png" alt="5" width="80%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Calvary Jamoko</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Jonas.png" alt="5" width="65%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Jonas Reid</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+
+
+  <!--Induction Committee-->
+  <div class="container">
+
+    <h1 class="sub-heading">Induction Committee</h1>
+    
+    <br>
+    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="row">
+
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Anjali.png" alt="5" width="70%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Anjali Silina</h3>
+                <p>Service Chair <br>Senior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Norah.png" alt="5" width="70%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Norah Anderson</h3>
+                
+                <p>Service Chair <br>Senior</p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              
+                <img src="assets/img/team/bailey.jpg" alt="5" width="80%" height="60%">
+             
+              <div class="carousel-caption">
+                <h4>Bailey Gervais</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Lana.png" alt="5" width="75%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Laurana Philbin</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+  
+              
+            </div>
+          </div>
+        </div>
+  
+        <div class="item">
+          <div class="row">
+            <div class="col-xs-3">
+              
+              <img src="assets/img/portfolio/3.jpg" alt="5" width="100%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Nida Khan</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            <!-- Add more images here -->
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Jillian.png" alt="5" width="80%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Jillian Vessella</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Maya.png" alt="5" width="70%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Maya Liston</h3>
+
+                <p>Member <br>Senior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Sydney.jpg" alt="5" width="80%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Sydney Vyskocil</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+
+    
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!--Family Code Night-->
+  <div class="container">
+
+    <h1 class="sub-heading">Family Code Night Commitee</h1>
+    
+    <br>
+    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="row">
+
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Abdul.jpg" alt="5" width="70%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Abdul Mohammed</h3>
+                <p>Service Chair <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Anjali.png" alt="5" width="70%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Anjali Silina</h3>
+                
+                <p>Service Chair <br>Senior</p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              
+                <img src="assets/img/team/Norah.png" alt="5" width="70%" height="60%">
+             
+              <div class="carousel-caption">
+                <h4>Norah Anderson</h3>
+
+                <p>Service Chair <br>Senior</p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Sydney.jpg" alt="5" width="80%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Sydney Vyskocil</h3>
+
+                <p>Service Chair <br>Junior</p>
+              </div>
+  
+              
+            </div>
+          </div>
+        </div>
+  
+        <div class="item">
+          <div class="row">
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Allana.png" alt="5" width="70%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Allana Dayou</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            <!-- Add more images here -->
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Jillian.png" alt="5" width="80%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Jillian Vesella</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Lana.png" alt="5" width="75%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Laurana Philbin</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/bailey.jpg" alt="5" width="80%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Bailey Gervais</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Robert.JPG" alt="5" width="60%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Robert Troast</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            <!-- Add more images here -->
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Logan.jpg" alt="5" width="75%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Logan Mayo</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Eugene.jpg" alt="5" width="60%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Owen Trottier</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/james.png" alt="5" width="75%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>James Puopolo</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Chris.jpg" alt="5" width="70%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Chris Legault</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            <!-- Add more images here -->
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Ryan.png" alt="5" width="60%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Ryan Terry</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Calvary.png" alt="5" width="80%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Calvary Jamoko</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Jonas.png" alt="5" width="65%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Jonas Reid</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!--Fundrasing-->
+  <div class="container">
+
+    <h1 class="sub-heading">Fundraising Committee</h1>
+    
+    <br>
+    <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="row">
+
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Robert.JPG" alt="5" width="60%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Robert Troast</h3>
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/james.png" alt="5" width="75%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>James Puopolo</h3>
+                
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              
+                <img src="assets/img/team/Ryan.png" alt="5" width="60%" height="60%">
+             
+              <div class="carousel-caption">
+                <h4>Ryan Terry</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              
+              <img src="assets/img/portfolio/3.jpg" alt="5" width="100%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Nida Khan</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+  
+              
+            </div>
+          </div>
+        </div>
+  
+        <div class="item">
+          <div class="row">
+            <div class="col-xs-3">
+              
+              <img src="assets/img/portfolio/3.jpg" alt="5" width="100%" height="60%">
+  
+              
+              <div class="carousel-caption">
+                <h4>Ethan Dwyer</h3>
+
+                <p>Member <br>Senior</p>
+              </div>
+            </div>
+            <!-- Add more images here -->
+            <div class="col-xs-3">
+              
+              <img src="assets/img/portfolio/3.jpg" alt="5" width="100%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Kushi Chanumolu</h3>
+
+                <p>Member <br>Junior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Owen.jpg" alt="5" width="60%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Owen Klumpenaar</h3>
+
+                <p>Member <br>Senior</p>
+              </div>
+            </div>
+  
+            <div class="col-xs-3">
+              
+              <img src="assets/img/team/Harsith.jpg" alt="5" width="55%" height="60%">
+  
+            
+              <div class="carousel-caption">
+                <h4>Harsith Thokala</h3>
+
+                <p>Member <br>Senior</p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+
+    
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
